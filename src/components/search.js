@@ -4,8 +4,13 @@ import Input from './input.js'
 import Button from './button.js'
 
 class Search extends Component{
+  handleSubmit = () => {
+    
+  }
+
   render(){
     return Form({
+      onSubmit: this.handleSubmit,
       children: [
         new Input({
           placeholder: 'Escribe tu pelicula favorita',
